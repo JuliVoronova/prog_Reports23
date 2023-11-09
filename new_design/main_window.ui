@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Reports</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 250, 250);
+font-family: Arial</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="block_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>341</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="customer_lb">
+        <property name="text">
+         <string>Заказчик</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="ty_opo_lb">
+        <property name="text">
+         <string>ТУ ОПО</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="fio_welder_lb">
+        <property name="text">
+         <string>ФИО сварщика</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="stigma_lb">
+        <property name="text">
+         <string>Клеймо сварщика</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="customer"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ty_opo"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fio_welder"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="stigma"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>321</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="block_3">
+     <item>
+      <widget class="QRadioButton" name="vt_button">
+       <property name="text">
+        <string>Визуальный и измерительный (ВИК)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="rt_button">
+       <property name="text">
+        <string>Радиографический (РК)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="ut_button">
+       <property name="text">
+        <string>Ультразвуковой (УК)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="pt_button">
+       <property name="text">
+        <string>Капиллярный (ПВК)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="mt_button">
+       <property name="text">
+        <string>Магнитопорошковый (МПК)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSplitter" name="block_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>331</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="number_prot_lb">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>№ Протокола</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="num_programm_lb">
+        <property name="text">
+         <string>№ Программы</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="date_welding_lb">
+        <property name="text">
+         <string>Дата сварки</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="date_control_lb">
+        <property name="text">
+         <string>Дата контроля</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="number_prot"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="num_programm"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="date_welding"/>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="date_control"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>281</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QPushButton" name="add_doc">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color:black;
+background-color:rgba(220, 220, 220, 30);
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Добавить докумен</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add_metodology">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color:black;
+background-color:rgba(220, 220, 220, 30);
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Добавить методику</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add_kss">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color:black;
+background-color:rgba(220, 220, 220, 30);
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Добавить КСС</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="create">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color:black;
+background-color:rgba(220, 220, 220, 30);
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Создать</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
